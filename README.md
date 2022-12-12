@@ -2,6 +2,25 @@
 
 You need to extend this activity on your activity
 
+### on your activity
+
+````kotlin
+    fun askPermissions(){
+        val askedPermissions : Array<String?> = arrayOf(
+            Manifest.permission.PERMISSION_NAME_1,
+            Manifest.permission.PERMISSION_NAME_2,
+            ...
+        )
+        super.askPermission(askedPermissions, PERMISSIONS_REQUEST_CODE)
+    }
+
+    override fun permissionGranted(requestCode: Int) {
+        if (requestCode == PERMISSIONS_REQUEST_CODE){
+            ...
+        }
+    }
+````
+
 ### with JAVA
 ````java
 import android.content.DialogInterface;
