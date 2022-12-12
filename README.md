@@ -1,6 +1,6 @@
 # android-runtime-permission
 
-You need to extend this activity on your activity
+You need to extend ``RuntimePermissionActivity`` on your activity
 
 ### on your activity
 
