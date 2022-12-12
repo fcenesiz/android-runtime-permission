@@ -1,5 +1,7 @@
 # android-runtime-permission
 
+You need to extend this activity on your activity
+
 ### with JAVA
 ````java
 import android.content.DialogInterface;
